@@ -314,26 +314,29 @@
                         <form action="https://api.web3forms.com/submit" method="post" id="contactForm">
                             <input type="hidden" name="access_key" value="a56877c9-6f44-49d8-8a66-e08cbc4fe1b9">
                             <div class="form-row">
-                                <div class="control-group py-3 col-sm-6">
+                                <div class="control-group was-validated py-2 col-sm-6">
                                     <input type="text" class="form-control p-4" id="name" name="name" placeholder="Your Name"
                                         required="required"  />
-                                    
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill your name.</div>
                                    </div>
-                                <div class="control-group py-3 col-sm-6">
+                                <div class="control-group was-validated py-2 col-sm-6">
                                     <input type="email" class="form-control p-4" id="email" name="email" placeholder="Your Email"
                                         required="required"  />
-                                   
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill your email.</div>
                                 </div>
                             </div>
-                            <div class="control-group py-3" >
+                            <div class="control-group was-validated py-2" >
                                 <input type="text" class="form-control p-4" id="subject" name="subject" placeholder="Subject"
                                     required="required"  />
-                                
+                                    <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
-                            <div class="control-group py-3">
+                            <div class="control-group was-validated py-3">
                                 <textarea class="form-control py-3 px-4" rows="5" id="message" name="message" placeholder="Message"
-                                    required="required"
-                                    ></textarea>
+                                    required="required"></textarea>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                
                                 
                             </div>
                             <div py-3 >
